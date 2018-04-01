@@ -1,0 +1,33 @@
+schema: kata.ai/schema/merapi/1.0
+
+name: ${package.name}
+version: ${package.version}
+
+plugins:
+  - express
+  - service
+
+components:
+  # main
+  main: Main
+
+  # controllers
+
+  # managers
+  gformManager: managers/GformManager
+
+  # express
+  app:
+    type: express
+
+service:
+  host: 0.0.0.0
+  port: 5000
+  api.v1:
+    parse: gformManager.parse
+
+app:
+  host: 0.0.0.0
+  port: ${$PORT}
+
+main: main

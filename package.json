@@ -1,0 +1,30 @@
+{
+  "name": "gform-to-katabot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prakashdivyy/gform-to-katabot.git"
+  },
+  "author": "prakashdivyy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prakashdivyy/gform-to-katabot/issues"
+  },
+  "homepage": "https://github.com/prakashdivyy/gform-to-katabot#readme",
+  "dependencies": {
+    "js-yaml": "^3.11.0",
+    "merapi": "^0.19.0",
+    "merapi-plugin-express": "^0.5.0",
+    "merapi-plugin-service": "^0.3.6",
+    "phantom": "^4.0.12"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "typescript": "^2.8.1"
+  }
+}
