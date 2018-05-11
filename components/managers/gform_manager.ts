@@ -59,7 +59,7 @@ export default class GformManager extends Component implements IGformManager {
         let question = q[1];
         let answers : any;
         let title : any;
-        let description : any;
+        const description = q[2] ? q[2] : undefined;
         let url : any;
 
         switch (qType) {
@@ -98,13 +98,11 @@ export default class GformManager extends Component implements IGformManager {
                 type = "label";
                 question = undefined;
                 title = q[1];
-                description = q[2] ? q[2] : undefined;
                 break;
             case 8:
                 type = "section";
                 question = undefined;
                 title = q[1];
-                description = q[2] ? q[2] : undefined;
                 break;
             case 9:
                 type = "date";
